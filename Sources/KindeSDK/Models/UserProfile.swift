@@ -48,7 +48,7 @@ public struct UserProfile: Codable, JSONEncodable, Hashable {
         try container.encodeIfPresent(givenName, forKey: .givenName)
         try container.encodeIfPresent(familyName, forKey: .familyName)
         try container.encode(updatedAt, forKey: .updatedAt)
-        try? container.encodeIfPresent(email, forKey: .email)
+        try container.encodeIfPresent(email, forKey: .email)
     }
 }
 
